@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+</head>
+<body>
+
+    <h1 style="color: #2980b9;">Create Account</h1>
+
+    <form action="index.html" method="POST">
+        <!-- Personal Info -->
+        <fieldset>
+            <legend>Personal Info</legend>
+            
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="John Doe"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="student@bahria.edu.pk" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Choose a password" required><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </fieldset>
+
+        <br>
+
+        <!-- Academic & Interests -->
+        <fieldset>
+            <legend>Academic & Interests</legend>
+
+            <label for="dept">Department:</label><br>
+            <select id="dept" name="dept">
+                <option value="cs">CS</option>
+                <option value="se">SE</option>
+                <option value="ai">AI</option>
+                <option value="it">IT</option>
+            </select><br><br>
+
+            <label>Interests:</label><br>
+            <input type="checkbox" id="prog" name="interests" value="programming">
+            <label for="prog">Programming</label><br>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" id="reading" name="interests" value="reading">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label><br><br>
+
+            <label for="about">About You:</label><br>
+            <textarea id="about" name="about" rows="4" cols="40" placeholder="Tell us something about yourself..."></textarea><br><br>
+
+            <!-- Extra field -->
+            <label for="experience">Experience Level (1-10):</label><br>
+            <input type="range" id="experience" name="experience" min="1" max="10"><br><br>
+        </fieldset>
+
+        <br>
+        <button type="submit">Create Account</button>
+    </form>
+
+    <br>
+    <a href="index.html">Back to Sign In</a>
+
+</body>
+</html>
+			
